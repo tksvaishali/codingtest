@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.FirstScenarioActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/itemTextView1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border"
+                    android:paddingBottom="40dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/item1" />
+
+
+                <TextView
+                    android:id="@+id/itemTextView2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/itemTextView1"
+                    android:background="@drawable/background_border"
+                    android:paddingBottom="40dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/item2" />
+
+                <TextView
+                    android:id="@+id/itemTextView3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/itemTextView2"
+                    android:background="@drawable/background_border"
+                    android:paddingBottom="40dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/item3" />
+
+                <TextView
+                    android:id="@+id/itemTextView4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/itemTextView3"
+                    android:background="@drawable/background_border"
+                    android:paddingBottom="40dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/item4" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/leftTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:text="@string/textview1" />
+
+
+            <TextView
+                android:id="@+id/middleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/leftTextView"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="@string/textview2" />
+
+
+            <TextView
+                android:id="@+id/rightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/middleTextView"
+                android:padding="10dp"
+                android:text="@string/textview3" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/displayTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/select_item_text" />
+
+        <LinearLayout
+            android:id="@+id/buttonBackgroundLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/redBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/red" />
+
+            <Button
+                android:id="@+id/blueBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/blue" />
+
+            <Button
+                android:id="@+id/greenBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/green" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

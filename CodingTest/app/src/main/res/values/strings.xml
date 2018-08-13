@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">CodingApplication</string>
+
+    <string name="scenario1">Scenario 1</string>
+    <string name="scenario2">Scenario 2</string>
+
+    <string name="item1">Item 1</string>
+    <string name="item2">Item 2</string>
+    <string name="item3">Item 3</string>
+    <string name="item4">Item 4</string>
+
+    <string name="select_item_text">Select any Item from Top</string>
+
+
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+
+    <string name="textview1">TextView 1</string>
+    <string name="textview2">TextView 2</string>
+    <string name="textview3">TextView 3</string>
+
+    <string name="mode_of_transport">Mode of Transport :</string>
+    <string name="car">Car - </string>
+    <string name="train">Train - </string>
+    <string name="navigate">Navigate</string>
+
+    <string name="fragment_number">Fragment Number : </string>
+
+    <string name="alert">Alert</string>
+    <string name="error_message">Error occured. Please check your internet connection and try again.</string>
+    <string name="ok">Ok</string>
+
+</resources>
